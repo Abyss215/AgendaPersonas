@@ -24,9 +24,9 @@ public class DataBase
                 data.mkdirs();
             }
         }catch(Exception e){e.printStackTrace();}
-        nombres=asignarDT("../AgendaPersonas/Datos/nombres.txt");
-        apellidos=asignarDT("../AgendaPersonas/Datos/apellidos.txt");
-        ciudades=asignarDT("../AgendaPersonas/Datos/ciudades.txt");
+        nombres=asignarDT("Datos/nombres.txt");
+        apellidos=asignarDT("Datos/apellidos.txt");
+        ciudades=asignarDT("Datos/ciudades.txt");
     }
     
     //obtener un dato aleatorio de la base de datos
