@@ -1,12 +1,8 @@
 ------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
+programa que crea una agenda de personas usando una base de datos extraida de un archivo .txt para generar diferentes objetos personas con datos aleatorios; y ocupa metodos de busqueda refetente a cada atributo de la clase persona 
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
+PROJECT TITLE:Agenda
+VERSION or DATE:17.03.2020
+AUTHORS:Cristian Rodriguez Venegas(Criss_215)
 USER INSTRUCTIONS:
