@@ -1,9 +1,8 @@
 
 /**
- * Write a description of class Agenda here.
+ * clase agenda, que hace busquedas de personas registradas en un vector
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Criss_215
  */
 import java.util.Vector;
 import javax.swing.JOptionPane;
@@ -220,6 +219,28 @@ public class Agenda
         }
         return pers;
     }
+    
+    
+    /**busquedas comuestas*/
+    public Agenda buscarApellidoCiudad(String ape, String ciud){
+        return buscarTodosConApellido(ape).buscarTodosConCiudad(ciud);
+    }    
+    
+    public Agenda buscarCiudadMayores(String ciud){
+        return buscarMayoresDeEdad().buscarTodosConCiudad(ciud);
+    }    
+    
+    public Agenda buscarGeneroMayores(String gen){
+        return buscarMayoresDeEdad().buscarTodosConGenero(gen);
+    }    
+    
+    public Agenda buscarMayoresGeneroCiudad(String gen,String ciud){
+        return buscarGeneroMayores(gen).buscarTodosConCiudad(ciud);
+    }    
+    
+    public Agenda buscarApellidoCiudadGenero(String ape, String ciud,String gen){
+        return buscarApellidoCiudad(ape,ciud).buscarTodosConGenero(gen);
+    }    
     
     //toString
     public String toString(){

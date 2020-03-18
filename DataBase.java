@@ -1,6 +1,7 @@
-
 /**
  * Base de datos de nombres, apellidos y ciudades para generar personas aleatoriamente
+ * 
+ * @Criss_215
  */
 import java.io.File;
 import java.io.FileReader;
@@ -114,6 +115,7 @@ public class DataBase
             e.printStackTrace();
         }
     }
+    
     
     public String toString(){
         String text=nombres.toString()+"\n\n"+apellidos.toString()+"\n\n"+ciudades.toString();

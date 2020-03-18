@@ -1,5 +1,7 @@
 /**
- * Clase persona
+ * Clase persona, y nada mas
+ * 
+ * @Criss_215
  */
 
 import java.lang.Math;
