@@ -22,11 +22,7 @@ public class LeerAgenda
         System.out.println("\nde que tipo quiere realizar su busqueda, si incluye diferentes parametros separelos con coma (,)");
         String resp=sc.nextLine();
         System.out.println("\n1.-nombre\n2.-apellido\n3.-ciudad\n4.-edad\n5.-genero\n6.-lada telefono\n");
-        resp=sc.nextLine();/*
-        buscar(resp,ag);
-        }
-        private static void buscar(String resp,Agenda ag){
-        Scanner sc=new Scanner(System.in);*/
+        resp=sc.nextLine();
         Agenda aux=ag;
         Agenda bus=null;
         if(resp.contains("1")){

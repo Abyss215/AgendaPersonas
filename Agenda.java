@@ -1,6 +1,7 @@
 
 /**
- * clase agenda, que hace busquedas de personas registradas en un vector
+ * clase Agenda, donde se almacenaran las personas en un arreglo 
+ * para realizar busqedas con diferentes parametros.
  * 
  * @Criss_215
  */
@@ -219,28 +220,22 @@ public class Agenda
         }
         return pers;
     }
-    
-    
-    /**busquedas comuestas*/
-    public Agenda buscarApellidoCiudad(String ape, String ciud){
+    /** busquedas personalizadas/combinadas */
+    public Agenda buscarApellCiud(String ape,String ciud){
         return buscarTodosConApellido(ape).buscarTodosConCiudad(ciud);
-    }    
-    
-    public Agenda buscarCiudadMayores(String ciud){
+    }
+    public Agenda buscarCiudMayores(String ciud){
         return buscarMayoresDeEdad().buscarTodosConCiudad(ciud);
-    }    
-    
-    public Agenda buscarGeneroMayores(String gen){
-        return buscarMayoresDeEdad().buscarTodosConGenero(gen);
-    }    
-    
-    public Agenda buscarMayoresGeneroCiudad(String gen,String ciud){
-        return buscarGeneroMayores(gen).buscarTodosConCiudad(ciud);
-    }    
-    
-    public Agenda buscarApellidoCiudadGenero(String ape, String ciud,String gen){
-        return buscarApellidoCiudad(ape,ciud).buscarTodosConGenero(gen);
-    }    
+    }
+    public Agenda buscarSexoMayores(String sexo){
+        return buscarTodosConGenero(sexo).buscarMayoresDeEdad();
+    }
+    public Agenda buscarMayoresGeneroCiudad(String sex,String ciud){
+        return buscarSexoMayores(sex).buscarTodosConCiudad(ciud);
+    }
+    public Agenda buscarApellidoCiudadSexo(String ape,String sex,String ciud){
+        return buscarTodosConGenero(sex).buscarApellCiud(ape,ciud);
+    }  
     
     //toString
     public String toString(){

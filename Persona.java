@@ -1,5 +1,5 @@
 /**
- * Clase persona, y nada mas
+ * Clase persona, y nada mas,solo eso la persona q se guardara en la agenda
  * 
  * @Criss_215
  */
