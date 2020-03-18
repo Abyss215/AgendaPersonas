@@ -20,7 +20,7 @@ public class DataBase
     //constructor
     public DataBase(){
         try{
-            File data = new File("../AgendaPersonas/Datos"); 
+            File data = new File("Datos"); 
             if(!data.exists()){
                 data.mkdirs();
             }
@@ -53,17 +53,17 @@ public class DataBase
     ///agregar nuevos datos para generar personas
     public void agregarNombre(String nom){
         nombres.add(nom);
-        guardarDato("../AgendaPersonas/Datos/nombres.txt",nom);
+        guardarDato("Datos/nombres.txt",nom);
     }
     
     public void agregarApellidos(String ape){
         apellidos.add(ape);
-        guardarDato("../AgendaPersonas/Datos/apellidos.txt",ape);
+        guardarDato("Datos/apellidos.txt",ape);
     }
     
     public void agregarCiudades(String cd){
         ciudades.add(cd);
-        guardarDato("../AgendaPersonas/Datos/ciudades.txt",cd);
+        guardarDato("Datos/ciudades.txt",cd);
     }
     
     ///metodos para obtener datos y asignarlos a los vectores
